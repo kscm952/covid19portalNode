@@ -1,0 +1,57 @@
+POST http://localhost:3000/login/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIyODczNTgyfQ.ud96fMlg1lAjpi8wB1QeytbvzEDkERXUWSlmWsVXHGY
+Content-Type : application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+###
+
+GET http://localhost:3000/states/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIyODczNTgyfQ.ud96fMlg1lAjpi8wB1QeytbvzEDkERXUWSlmWsVXHGY
+###
+
+GET http://localhost:3000/states/1/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIyODczNTgyfQ.ud96fMlg1lAjpi8wB1QeytbvzEDkERXUWSlmWsVXHGY
+###
+
+POST http://localhost:3000/districts/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIyODczNTgyfQ.ud96fMlg1lAjpi8wB1QeytbvzEDkERXUWSlmWsVXHGY
+Content-Type : application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+###
+
+GET http://localhost:3000/districts/1/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIyODczNTgyfQ.ud96fMlg1lAjpi8wB1QeytbvzEDkERXUWSlmWsVXHGY
+###
+
+DELETE http://localhost:3000/districts/100/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIyODczNTgyfQ.ud96fMlg1lAjpi8wB1QeytbvzEDkERXUWSlmWsVXHGY
+###
+
+PUT http://localhost:3000/districts/1/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIyODczNTgyfQ.ud96fMlg1lAjpi8wB1QeytbvzEDkERXUWSlmWsVXHGY
+Content-Type : application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+###
+
+GET http://localhost:3000/states/2/stats/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIyODczNTgyfQ.ud96fMlg1lAjpi8wB1QeytbvzEDkERXUWSlmWsVXHGY
+###
